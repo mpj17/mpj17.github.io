@@ -1,0 +1,72 @@
+/* base.css -- Base style for ldots.org
+ * 
+ * Contains the few styles that are common to all views of
+ * ldots.org.
+ */
+
+code, pre, kbd {
+  font-family: monospace;
+  font-weight: bold;
+}
+/* Make the kbd tag look as if it has a shadow. */
+kbd { 
+  border-style: outset;
+}
+
+/* Use the correct double and single quotes, double quotes first */
+q {quotes: '\201c' '\201d' '\2018' '\2019'}
+
+/* Tables have no gaps between the borders */
+table { 
+  border-spacing: 0px;
+
+  width: 100%;
+}
+
+/* Small-caps font */
+acronym, .sc {
+  font-variant: small-caps;
+}
+
+/* Unorderd list without bullets. */
+ul.preity {
+  list-style: none;
+}
+
+/* For tables that require a rule under the header */
+th.headrule {
+  border-bottom: solid;
+  border-color: black;
+}
+
+/* The styles for creating the iOpen logo*/
+.iopen {
+  color:#060682;
+  background:inherit;
+  font-family:sans-serif;
+  font-weight:bold;
+}
+.iopenI {
+  color:#fe9a36;
+  background:inherit;
+  font-family:serif;
+  font-style:italic;
+}
+
+/* Figures float to the right, with a nice margin around them */
+div.figure {
+  float:right; 
+  margin-left: 1em;
+}
+div.figure a img {
+  border: 0px;
+}
+
+
+/* The footer at the bottom of the page. */
+#footer {
+  font-size: smaller;
+  border-top: thin solid black;
+  margin: 1em 0em 0em 0em;
+  padding: 1em 0em 1em 0em;
+}

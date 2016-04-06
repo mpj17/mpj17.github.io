@@ -1,0 +1,149 @@
+@import url("base.css");
+
+body { 
+  font-family: serif;
+  color: black;
+  background:#dedfce  url("/style/gorilla_bg.png") repeat-x fixed bottom;
+  padding: 1em 1em 1em 1em;
+  margin: 0px;
+}
+#maincontent { 
+  color: inherit;
+  background: white;
+  margin: auto;
+  padding: 10px 2em 10px 2em;
+  max-width: 728px;
+}
+
+h1, h2, h3, h4, h5, h6, dt, caption, th { 
+  color: #3b3ca2;
+  background: inherit;
+  font-family: serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+}
+h1, h2{ 
+ text-align: right;
+ border-bottom: thick solid #3b3ca2;
+}
+h1 span.subtitle:before { 
+  content: "\A";
+}
+h1 span.subtitle { 
+  font-size: medium;
+}
+h3, h4, h5, h6 {
+  text-align: left;
+}
+
+h1 + div img {
+  padding-top: 1em;
+}
+
+table { 
+  border: none;
+  margin-bottom: 1em;
+}
+caption, td, th { 
+  font-size: medium; /* Hopefuly the same as h4 */
+}
+td, th { 
+  width: auto;
+  padding-right: 1em;
+}
+
+td { 
+  text-align: right;
+}
+tfoot td, tfoot th { 
+  color: black;
+  background: inherit;
+  font-weight: bold;
+  border-top: thin solid black;
+}
+
+a { 
+  color: #3b3ca2;
+  background: inherit;
+}
+a:visited { 
+  color: #551a8b;
+  background: inherit;
+}
+dt {
+  clear: none;
+}
+.fragment, tr.fragment th {
+  color: white;
+  background: #3b3ca2;
+  border: none;
+}
+.fragment a, .fragment a:visited {
+  color: white;
+  background: #3b3ca2;
+  font-weight: bold;
+}
+
+div#contents, div.sidebar{ 
+  width: 10em;
+  float: right;
+  margin: 0px;
+  margin-left: 1em;
+  padding: 0px;
+}
+
+div#contents h2, div.sidebar h2 { 
+  margin: 0px;
+  padding: 0px;
+}
+
+div#contents ul li { 
+  padding-top: 0.8em;
+}
+
+div.sidebar { 
+  background: white;
+  z-index: 1;
+}
+
+.sc, acronym {
+  font-variant: small-caps;
+}
+.figure {
+  padding-top: 1em;
+}
+#adsense {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#breadcrumbs {
+  border-bottom: thin dashed black;
+  line-height: 2em;
+}
+#breadcrumbs ul {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+#breadcrumbs ul li { 
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+  font: small monospace;
+}
+#breadcrumbs ul li:before { 
+  content: ">";
+}
+
+p#footer { 
+  border-top: thin solid black;
+  font-family: sans-serif;
+  font-size: small;
+  margin: 1em 0px 0px 0px;
+  padding: 1em 0px 1em 0px;
+}

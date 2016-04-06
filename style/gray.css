@@ -1,0 +1,108 @@
+/* gray.css -- Gray colour scheme for ldots.org 
+ *
+ * A gray design, with with white sans-serif body text, and white
+ * serif headings.  There are some light-grey lines to provide some
+ * contrast from the otherwise unending.
+ */
+@import url("/style/base.css");
+
+body {
+  color: white;
+  background-color: #737373;
+  font-family: sans-serif;
+  padding: 1em 1em 1em 1em;
+  margin: 0px;
+}
+#maincontent { 
+  margin: auto;
+  padding: 10px;
+  max-width: 728px;
+  border: thin dashed #acacac;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6, th, caption, th, dt, #breadcrumbs, p#footer {
+  font-family: serif;
+  text-align: left;
+}
+/* We make definition terms and table headings bold because they are
+ * smaller than h[1-6] tags.
+*/
+
+#breadcrumbs, caption, th, dt {
+  font-weight: bold;
+}
+/* Table headings are in reverse-colour */
+caption, th {
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  vertical-align: top;
+}
+caption { 
+  border: thin solid #acacac;
+}
+table{ 
+  width: auto;
+  border: thin solid #acacac;
+}
+
+/* The breadcrumb trail */
+#breadcrumbs {
+  font-size: smaller;
+  border-bottom: thin solid #acacac;
+  line-height: 2em;
+}
+
+#breadcrumbs ul {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+}
+#breadcrumbs ul li { 
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+}
+#breadcrumbs ul li:before { 
+  content: ">";
+}
+
+/* While I agree in principal that you should not change the colour of
+ * anchor-tags, it falls down when you alter the background
+ * colour. of the page
+*/
+a { 
+  color: white;
+  background: inherit;
+}
+a:visited { 
+  color: #acacac;
+  background: inherit;
+}
+
+p#footer { 
+  border-top: thin solid #acacac;
+}
+
+.iopen { 
+  color: white;
+  background: inherit;
+}
+.iopenI { 
+  color: #acacac;
+  background: inherit;
+}
+
+.fragment {
+  color: #737373;
+  background-color: white;
+  padding: 0.4em;
+}
+
+.sidebar {
+  float: right;
+  width: 10em;
+  border-top: thin dashed #acacac;
+  border-left: thin dashed #acacac;
+  border-bottom: thin dashed #acacac;
+  margin: 1em 0em 1em 1em;
+  padding: 0em 1em 0em 1em;
+}
