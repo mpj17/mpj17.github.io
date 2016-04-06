@@ -78,7 +78,7 @@ th.headrule {
 }
 
 /* Figures float to the right, with a nice margin around them */
-figure .pull-right {
+.pull-right {
   float: right;
   margin-left: 1rem;
 }
