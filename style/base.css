@@ -1,15 +1,31 @@
-/* base.css -- Base style for ldots.org
- * 
- * Contains the few styles that are common to all views of
- * ldots.org.
- */
+/* base.css -- Base style for ldots.org */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    background-color: white;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, th, caption, dt, #breadcrumbs, p#footer {
+  font-family: monospace;
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6, #breadcrumbs, p#footer {
+    margin-left: -2.5rem;
+    width: auto;
+    padding-left: 0;
+}
 
 code, pre, kbd {
   font-family: monospace;
   font-weight: bold;
 }
+
 /* Make the kbd tag look as if it has a shadow. */
-kbd { 
+kbd {
   border-style: outset;
 }
 
@@ -17,14 +33,13 @@ kbd {
 q {quotes: '\201c' '\201d' '\2018' '\2019'}
 
 /* Tables have no gaps between the borders */
-table { 
+table {
   border-spacing: 0px;
-
   width: 100%;
 }
 
 /* Small-caps font */
-acronym, .sc {
+abbr, acronym, .sc {
   font-variant: small-caps;
 }
 
@@ -33,40 +48,76 @@ ul.preity {
   list-style: none;
 }
 
+/* We make definition terms and table headings bold because they are
+ * smaller than h[1-6] tags.
+*/
+#breadcrumbs, caption, th, dt {
+  font-weight: bold;
+}
+/* Table headings are in reverse-colour */
+caption, th {
+  color: white;
+  background: black;
+  padding: 0.625rem;
+  vertical-align: top;
+}
+caption {
+  font-size: larger;
+}
+table{
+  width: auto;
+
+  border-bottom: thick solid black;
+}
+
 /* For tables that require a rule under the header */
 th.headrule {
   border-bottom: solid;
   border-color: black;
 }
 
-/* The styles for creating the iOpen logo*/
-.iopen {
-  color:#060682;
-  background:inherit;
-  font-family:sans-serif;
-  font-weight:bold;
-}
-.iopenI {
-  color:#fe9a36;
-  background:inherit;
-  font-family:serif;
-  font-style:italic;
-}
-
 /* Figures float to the right, with a nice margin around them */
-div.figure {
-  float:right; 
+figure .pull-right {
+  float: right;
   margin-left: 1em;
 }
-div.figure a img {
+figure a img {
   border: 0px;
 }
 
+/* The breadcrumb trail */
+#breadcrumbs {
+  border-bottom: thin dashed black;
+  line-height: 2;
+}
+
+#breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#breadcrumbs ul li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+#breadcrumbs ul li:before {
+  content: ">";
+}
+.fragment {
+  padding: 0.4em;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+.sidebar {
+  float: right;
+}
 
 /* The footer at the bottom of the page. */
 #footer {
   font-size: smaller;
   border-top: thin solid black;
-  margin: 1em 0em 0em 0em;
-  padding: 1em 0em 1em 0em;
+  margin: 1rem 0em 0em 0em;
+  padding: 1rem 0em 1rem 0em;
 }
